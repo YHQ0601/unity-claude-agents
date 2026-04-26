@@ -17,7 +17,7 @@ Do not ask the user to manually tag agents unless delegation is ambiguous.
 Use:
 - architecture-reviewer before changes affecting architecture, gameplay systems, economy, save data, performance, or long-term maintainability.
 - unity-code-worker for focused Unity C# implementation.
-- asset-spec-worker for icons, UI art, VFX, animation, audio, placeholder art, and asset briefs.
+- placeholder-asset-worker when the task needs temporary assets, primitive blockouts, placeholder prefabs, simple colored materials, VFX placeholders, UI blockouts, icon placeholders, or artist replacement plans.
 - unity-qa-checker after code, prefab, scene, package, or behavior-affecting changes.
 - project-memory-curator after meaningful tasks to propose local or project knowledge updates.
 

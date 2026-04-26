@@ -14,8 +14,9 @@ if echo "$PROMPT" | grep -Eqi '技能|skill|ability|角色技能'; then
   echo "- This looks like a skill-system task. Consider reading docs/systems/skill-system.md before implementation."
 fi
 
-if echo "$PROMPT" | grep -Eqi '美术|图标|icon|素材|角色|特效|vfx|动画|ui|按钮|宣传图|商店图|占位图|音效|audio'; then
-  echo "- This includes asset-related work. Consider using asset-spec-worker."
+if echo "$PROMPT" | grep -Eqi '临时资源|占位|placeholder|blockout|cube|基础颜色|临时模型|美术替换|图标|icon|素材|特效|vfx|动画|ui|按钮|角色|道具|prop'; then
+  echo "- This includes temporary or replaceable asset work. Consider using placeholder-asset-worker."
+  echo "- The worker should create primitive-based placeholders and an artist replacement plan, not final art."
 fi
 
 if echo "$PROMPT" | grep -Eqi '架构|重构|方案|系统设计|是否值得|必要性|长期|扩展|性能|数据结构'; then
