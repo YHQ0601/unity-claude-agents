@@ -1,15 +1,16 @@
----
-name: handoff
-description: Use at the end of a meaningful task or before ending a session to summarize progress, decisions, files changed, risks, and next steps.
----
+# handoff
 
-# Handoff
+Purpose: lightweight multi-session continuity summary.
 
-Return:
-1. Current task
-2. Files changed
-3. Decisions made
-4. Assumptions
-5. Remaining risks
-6. Suggested next step
-7. Whether SESSION_STATE.md should be updated
+## Output Format
+## Current Focus
+
+## Last Useful Commit
+
+## Files Touched
+
+## Decisions
+
+## Next Step
+
+## Stale / Verify Before Use
