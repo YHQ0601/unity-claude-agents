@@ -1,13 +1,13 @@
 # Project Brief
 
 ## Status
-Draft / Early setup
+Initial setup.
 
 ## Project Type
 Unity game project.
 
 ## Current Stage
-Initial setup. Core gameplay systems are not finalized yet.
+Early setup. Core gameplay systems are not confirmed yet.
 
 ## Target Platform
 TBD
@@ -25,4 +25,4 @@ TBD
 TBD
 
 ## Important Rule
-Do not assume any gameplay system exists unless it is present in the repository or documented in ARCHITECTURE_INDEX.md.
+Do not assume any gameplay system exists unless it is present in the repository or documented as confirmed.

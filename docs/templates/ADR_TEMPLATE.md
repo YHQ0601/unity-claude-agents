@@ -1,14 +1,16 @@
-# ADR-[NNN]: [Title]
+# ADR-[Number]: [Decision Title]
 
 ## Status
-Proposed / Accepted / Deprecated
+Proposed / Accepted / Rejected / Superseded
 
 ## Context
 
 ## Decision
 
-## Consequences
+## Reason
 
 ## Alternatives Considered
+
+## Consequences
 
 ## Rollback Plan
