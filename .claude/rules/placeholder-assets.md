@@ -1,14 +1,9 @@
-# Unity Placeholder Asset Rules
+# Placeholder Assets Rules
 
 ## Naming
 - Placeholder assets must use `_PH` suffix.
 - Placeholder materials must use `MAT_PH_` prefix.
 - Placeholder prefabs must use clear functional names.
-
-Examples:
-- WhirlwindSlash_PH.prefab
-- MAT_PH_Skill_AOE_Blue.mat
-- EnemyBoss_Blockout_PH.prefab
 
 ## Foldering
 Temporary assets should live under:
@@ -18,25 +13,21 @@ Temporary assets should live under:
 
 Do not mix placeholder assets with final art assets.
 
-## Replacement
-Every placeholder prefab should include stable child anchors when needed:
+## Anchor Protocol
+Use stable anchors when needed:
+- GameplayRoot
 - VisualRoot
+- Model_ReplaceHere
 - VFX_Anchor
 - SFX_Anchor
+- UI_Anchor
 - HitboxPreview
-- Model_ReplaceHere
-- Icon_ReplaceHere
+- ReplaceNotes
 
-Gameplay scripts should reference the stable root or anchor, not a specific temporary mesh whenever possible.
+Gameplay references should prefer stable roots/anchors over temporary meshes.
 
 ## Materials
-Use simple functional colors:
-- Red: damage / enemy / danger
-- Blue: player skill / area / magic
-- Green: healing / positive effect
-- Yellow: interactable / pickup / highlight
-- Gray: neutral blockout
-- Purple: special / debuff / curse
+Use simple functional colors for readability, not final look.
 
 ## Do Not
 - Do not create final art.

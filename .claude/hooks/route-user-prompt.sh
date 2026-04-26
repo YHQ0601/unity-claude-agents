@@ -6,6 +6,8 @@ PROMPT="$(echo "$INPUT" | jq -r '.prompt // ""')"
 
 echo "## Auto Routing Hints"
 
+echo "- Start with task-intake when scope/necessity is unclear."
+
 if echo "$PROMPT" | grep -Eqi 'unity|c#|脚本|代码|prefab|scene|scriptableobject|mono|编译|报错|玩法|系统|背包|技能|道具|角色'; then
   echo "- This looks like Unity development work. Consider using unity-code-worker."
 fi
@@ -29,8 +31,4 @@ fi
 
 if echo "$PROMPT" | grep -Eqi '检查|测试|验证|安全吗|有没有问题|review|qa|风险'; then
   echo "- This asks for verification. Consider using unity-qa-checker."
-fi
-
-if [ -f ".claude-local/NEEDS_KB_REVIEW" ]; then
-  echo "- NEEDS_KB_REVIEW exists. Consider running sync-knowledge before relying on local memory."
 fi

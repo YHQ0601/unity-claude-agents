@@ -19,10 +19,16 @@ Use:
 - unity-code-worker for focused Unity C# implementation.
 - placeholder-asset-worker when the task needs temporary assets, primitive blockouts, placeholder prefabs, simple colored materials, VFX placeholders, UI blockouts, icon placeholders, or artist replacement plans.
 - unity-qa-checker after code, prefab, scene, package, or behavior-affecting changes.
-- project-memory-curator after meaningful tasks to propose local or project knowledge updates.
+- project-memory-curator after meaningful tasks to propose local continuity updates.
+
+## Context Budget Rules
+- Keep main-session context for decisions and concise summaries.
+- Use subagents for broad discovery and noisy exploration.
+- Prefer index/template files first; deep-load only relevant files.
+- Avoid pasting full logs when summaries are sufficient.
 
 ## Knowledge Policy
-- Automatically read relevant System Cards when a task matches a known system.
+- Do not assume systems exist unless present in code or verified docs.
 - Do not automatically rewrite shared knowledge files.
 - Local session state may be updated more frequently.
 - If knowledge appears stale, verify against current code before acting.
@@ -33,3 +39,6 @@ Use:
 - Do not add packages without approval.
 - Do not modify ProjectSettings unless explicitly required.
 - After code changes, run or propose the smallest relevant verification.
+
+## Placeholder Asset Rules Entry
+Follow `.claude/rules/placeholder-assets.md` for naming, foldering, anchors, and replacement conventions.

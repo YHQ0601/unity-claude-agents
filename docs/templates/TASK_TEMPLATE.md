@@ -1,16 +1,14 @@
 # Task Template
 
-## Task
+## Goal
 
-## Context
+## Scope
 
-## Constraints
+## Out of Scope
 
-## Proposed Minimal Plan
+## Related Files
 
-## Files To Change
-
-## Verification
+## Acceptance Criteria
 
 ## Risks
 

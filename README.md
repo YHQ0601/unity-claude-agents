@@ -5,9 +5,9 @@ Unity Claude Code Lite Workflow v0.1 skeleton.
 ## Included in v0.1
 - `CLAUDE.md` project working agreement.
 - 5 subagents in `.claude/agents/`.
-- 3 hooks in `.claude/hooks/`.
-- 4 skills in `.claude/skills/`.
-- Rules in `.claude/rules/`.
+- 2 hooks in `.claude/hooks/`.
+- 4 skills in `.claude/skills/` (`task-intake`, `implement-unity-feature`, `build-placeholder-assets`, `handoff`).
+- 3 rules in `.claude/rules/` (`unity-csharp`, `placeholder-assets`, `context-budget`).
 - Minimal docs in `docs/ai/` and `docs/templates/`.
 - `docs/systems/` kept empty by default (`.gitkeep`).
 
