@@ -6,12 +6,12 @@ Unity Claude Code Lite Workflow v0.1 skeleton.
 - `CLAUDE.md` project working agreement.
 - 5 subagents in `.claude/agents/`.
 - 3 hooks in `.claude/hooks/`.
-- 2 skills in `.claude/skills/`.
-- Placeholder asset rules in `.claude/rules/unity-assets.md`.
-- AI docs index in `docs/ai/`.
-- Skill system card in `docs/systems/skill-system.md`.
+- 4 skills in `.claude/skills/`.
+- Rules in `.claude/rules/`.
+- Minimal docs in `docs/ai/` and `docs/templates/`.
+- `docs/systems/` kept empty by default (`.gitkeep`).
 
 ## Notes
 - `.claude-local/` is local-only state and is ignored by Git.
-- Shared knowledge is low-frequency maintenance; local state can be high-frequency.
-- Placeholder assets should use primitive-based `_PH` naming and clear replacement anchors.
+- Do not prefill system facts before those systems exist in code.
+- Create system cards only after systems are actually present.

@@ -5,8 +5,10 @@ echo "## Project Bootstrap"
 echo "- This is a Unity game project."
 echo "- Read CLAUDE.md first."
 echo "- Use docs/ai/PROJECT_BRIEF.md for project overview."
-echo "- Use docs/ai/ARCHITECTURE_INDEX.md for system map."
-echo "- Use docs/systems/*.md only when relevant."
+echo "- Use docs/ai/ARCHITECTURE_INDEX.md for architecture status and constraints."
+echo "- Use docs/templates/ when creating new system/task/ADR docs."
+echo "- Do not assume systems exist unless present in code or documented as verified."
+
 echo "- Use .claude-local/SESSION_STATE.md for local continuity if present."
 
 if [ -f ".claude-local/NEEDS_KB_REVIEW" ]; then

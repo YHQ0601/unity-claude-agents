@@ -1,17 +1,28 @@
-# PROJECT_BRIEF
+# Project Brief
 
-## Positioning
-Unity AI Lite Studio workflow for Claude Code.
+## Status
+Draft / Early setup
 
-## Goals
-- Keep workflow lightweight and stable.
-- Enable auto routing and constrained delegation.
-- Reduce context overhead via system cards and scoped knowledge.
-- Keep placeholder asset production practical: testable visuals now, clean artist replacement later.
-- Avoid turning knowledge into high-maintenance documentation.
+## Project Type
+Unity game project.
 
-## Non-Goals (v0.1)
-- 20+ agents.
-- Complex MCP integrations.
-- Automatic mass updates to shared knowledge.
-- Final-art generation inside Claude workflow.
+## Current Stage
+Initial setup. Core gameplay systems are not finalized yet.
+
+## Target Platform
+TBD
+
+## Game Genre
+TBD
+
+## Core Gameplay
+TBD
+
+## Art Direction
+TBD
+
+## Monetization
+TBD
+
+## Important Rule
+Do not assume any gameplay system exists unless it is present in the repository or documented in ARCHITECTURE_INDEX.md.

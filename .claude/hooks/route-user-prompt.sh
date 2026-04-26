@@ -11,7 +11,11 @@ if echo "$PROMPT" | grep -Eqi 'unity|c#|脚本|代码|prefab|scene|scriptableobj
 fi
 
 if echo "$PROMPT" | grep -Eqi '技能|skill|ability|角色技能'; then
-  echo "- This looks like a skill-system task. Consider reading docs/systems/skill-system.md before implementation."
+  if [ -f "docs/systems/skill-system.md" ]; then
+    echo "- This looks like a skill-system task. Read docs/systems/skill-system.md, then verify against current code."
+  else
+    echo "- This looks like a skill-related task, but no skill-system card exists. Inspect the repository first and do not assume an existing skill system."
+  fi
 fi
 
 if echo "$PROMPT" | grep -Eqi '临时资源|占位|placeholder|blockout|cube|基础颜色|临时模型|美术替换|图标|icon|素材|特效|vfx|动画|ui|按钮|角色|道具|prop'; then
