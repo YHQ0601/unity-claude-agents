@@ -1,3 +1,8 @@
+---
+name: task-intake
+description: Use this skill at the start of ambiguous or multi-part Unity project requests to classify the task, decide whether it is necessary now, identify the smallest useful version, and choose the required workstreams before implementation.
+---
+
 # task-intake
 
 Purpose: classify a request before implementation so the workflow does not blindly execute everything.

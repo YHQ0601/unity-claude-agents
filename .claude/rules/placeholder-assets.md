@@ -1,3 +1,7 @@
+---
+description: Keep Unity placeholder assets temporary, replaceable, clearly named, and separated from final art while preserving stable replacement anchors.
+---
+
 # Placeholder Asset Rules
 
 ## Purpose

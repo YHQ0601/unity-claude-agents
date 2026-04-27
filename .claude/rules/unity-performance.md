@@ -1,3 +1,7 @@
+---
+description: Prefer mobile-friendly Unity performance practices, bounded hot paths, measured optimization, and simple placeholder rendering.
+---
+
 # Unity Performance Rules
 
 ## Target

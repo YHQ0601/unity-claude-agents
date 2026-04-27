@@ -1,3 +1,7 @@
+---
+description: Guide Unity C# implementation toward simple, focused, serialization-safe, performance-aware gameplay code.
+---
+
 # Unity C# Rules
 
 ## General

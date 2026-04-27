@@ -1,3 +1,7 @@
+---
+description: Keep Unity asset import behavior predictable and avoid accidental quality, memory, platform, or placeholder/final-art regressions.
+---
+
 # Unity Asset Import Rules
 
 ## Purpose

@@ -1,3 +1,7 @@
+---
+description: Keep Claude Code context focused by summarizing noisy exploration, using subagents for broad searches, and preserving continuity without pasting long logs.
+---
+
 # Context Budget Rules
 
 ## Main Principle

@@ -1,3 +1,7 @@
+---
+description: Protect Unity source-control-sensitive files such as .meta, prefabs, scenes, ProjectSettings, packages, and assets from accidental unsafe edits.
+---
+
 # Unity Project Safety Rules
 
 ## Source Control Sensitive Files

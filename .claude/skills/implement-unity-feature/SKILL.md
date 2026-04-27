@@ -1,3 +1,8 @@
+---
+name: implement-unity-feature
+description: Use this skill when implementing a focused Unity feature or C# gameplay change, including MonoBehaviour, ScriptableObject, input, UI logic, compile fixes, or small refactors that should stay minimal and verified.
+---
+
 # implement-unity-feature
 
 Purpose: run a minimal Unity implementation workflow.
