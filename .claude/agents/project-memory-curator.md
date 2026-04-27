@@ -1,6 +1,7 @@
 ---
 name: project-memory-curator
 description: Use this agent automatically at the end of meaningful tasks, after git pulls that changed key project areas, after architecture decisions, after major file moves, or when local session state may be stale. It may update local session state, proposes shared knowledge updates, and never treats local memory as source of truth.
+model: sonnet
 tools: Read, Write, Grep, Glob
 ---
 
