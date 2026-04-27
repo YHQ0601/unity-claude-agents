@@ -45,6 +45,8 @@ Use:
 - Local session state may be updated more frequently.
 
 ## Context Budget Policy
+- Prefer structured project context before broad file scans.
+- Check `.claude-local/SESSION_STATE.md`, `docs/ai/ARCHITECTURE_INDEX.md`, and relevant system cards before expanding to Grep/Glob/Read.
 - Do not read too many large files before summarizing.
 - Prefer reading index files, templates, and relevant examples first.
 - Use subagents for noisy searches or broad investigation.
@@ -68,4 +70,5 @@ Do not mix placeholder assets with final art assets.
 - Do not refactor unrelated systems.
 - Do not add packages without approval.
 - Do not introduce complex abstractions for one-off features.
+- Before review or QA, identify changed files, affected systems, and likely Unity serialization/reference risks.
 - After code changes, run or propose the smallest relevant verification.
