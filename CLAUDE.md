@@ -44,6 +44,16 @@ Use:
 - Shared knowledge files require user approval before meaningful updates.
 - Local session state may be updated more frequently.
 
+## Task Card Policy
+- `docs/tasks/*.md` is the shared task queue.
+- Session start may list open tasks, but do not claim or start a task automatically.
+- Claim a task only when the user names a task card or explicitly asks for the next task.
+- When claiming a task, set `Status: In Progress` and fill `Owner Agent` when editing the task card is allowed.
+- Close a task only after its acceptance criteria and validation plan are satisfied.
+- When closing a task, set `Status: Done`, fill `Completed`, and summarize checks run.
+- Use `Status: Blocked` with `Blocked Reason` when missing information prevents progress.
+- `.claude-local/SESSION_STATE.md` is continuity memory, not the source of truth for task status.
+
 ## Context Budget Policy
 - Prefer structured project context before broad file scans.
 - Check `.claude-local/SESSION_STATE.md`, `docs/ai/ARCHITECTURE_INDEX.md`, and relevant system cards before expanding to Grep/Glob/Read.
