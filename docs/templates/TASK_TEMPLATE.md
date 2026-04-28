@@ -1,10 +1,26 @@
 # Task: [Name]
 
+Status: Todo
+Owner Agent: TBD
+Created: YYYY-MM-DD
+Started:
+Completed:
+
+## Source / Design Input
+
+## Requirement Summary
+
 ## Goal
 
 ## Scope
 
 ## Out of Scope
+
+## Suggested Claude Agent
+
+## File Ownership
+
+## Do Not Touch
 
 ## Related Files
 
@@ -16,6 +32,14 @@
 
 ## Acceptance Criteria
 
+## Validation Plan
+
+## Close Criteria
+
+## Blocked Reason
+
 ## Risks
+
+## Open Questions
 
 ## Next Step
