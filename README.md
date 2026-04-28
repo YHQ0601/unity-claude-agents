@@ -26,6 +26,21 @@ Use this scaffold when you want Claude Code to work inside a Unity repository wi
 - avoid unsafe Unity file edits such as unnecessary `.meta`, prefab, scene, or `ProjectSettings` changes;
 - document only systems that actually exist or have been explicitly approved.
 
+## Task Cards
+
+`docs/tasks/*.md` is the lightweight shared task queue. New sessions list open task cards when their status is `Todo`, `In Progress`, or `Blocked`, but Claude Code should not claim or start a task automatically.
+
+Use `docs/templates/TASK_TEMPLATE.md` when creating tasks. A task card should include status, source/design input, suggested agent, file ownership, do-not-touch boundaries, acceptance criteria, validation plan, and close criteria.
+
+Typical task status flow:
+
+- `Todo`: ready to claim.
+- `In Progress`: explicitly claimed by the user or current agent.
+- `Blocked`: waiting for missing information or approval.
+- `Done`: acceptance criteria and validation plan are satisfied.
+
+`.claude-local/SESSION_STATE.md` is local continuity memory, not the source of truth for task status.
+
 ## Project Knowledge Policy
 
 The repository code is the source of truth. Documentation is used as navigation and memory, not as proof that a gameplay system exists.
