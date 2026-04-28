@@ -25,6 +25,10 @@ if echo "$PROMPT" | grep -Eqi 'plan|design|scope|should we|is it worth|worth it|
   add_hint "This may need task classification. Consider using task-intake before implementation."
 fi
 
+if echo "$PROMPT" | grep -Eqi 'task card|docs/tasks|claim task|close task|next task|open task|todo|in progress|blocked|done|任务卡|领取任务|关闭任务|下一个任务|未完成任务|进行中|阻塞|已完成'; then
+  add_hint "This looks like task-card workflow. Read docs/templates/TASK_TEMPLATE.md and docs/tasks/*.md; do not claim a task unless the user explicitly asks."
+fi
+
 if echo "$PROMPT" | grep -Eqi 'architecture|refactor|system boundary|data model|save data|economy|performance|extensible|scalable|long-term|abstraction|maintainability|架构|重构|系统边界|数据模型|存档|经济|性能|扩展性|长期维护|抽象|可维护|系统设计'; then
   add_hint "This may affect architecture or long-term maintainability. Consider using architecture-reviewer before implementation."
 fi
