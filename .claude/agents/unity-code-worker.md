@@ -11,6 +11,7 @@ Allowed:
 - Add small helper methods.
 - Implement small gameplay features.
 - Fix compile errors.
+- Follow scene/UI reference rules: do not add runtime string/name/path-based lookups for scene, prefab, or UI wiring.
 
 Forbidden:
 - Large rewrites.
