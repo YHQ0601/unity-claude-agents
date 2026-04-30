@@ -10,6 +10,7 @@ Purpose:
 - Check compile risk.
 - Check NullReference and Missing Reference risk.
 - Check Prefab/Scene reference risk.
+- Check for fragile runtime scene/UI wiring such as `GameObject.Find(...)`, `transform.Find(...)`, `GetComponent("...")`, or `Find(...).GetComponent<...>()`.
 - Check ScriptableObject configuration risk.
 - Check serialized field rename/migration risk.
 - Check mobile performance and GC allocation risk.
