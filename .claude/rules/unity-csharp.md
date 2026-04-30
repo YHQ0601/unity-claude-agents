@@ -15,6 +15,14 @@ description: Guide Unity C# implementation toward simple, focused, serialization
 - Prefer `[SerializeField] private` fields over public mutable fields.
 - Do not change serialized field names without considering existing Inspector data.
 
+## Scene / UI Reference Rules
+- Do not use string/name/path-based lookups for runtime scene, prefab, or UI wiring, such as `GameObject.Find("...")`, `transform.Find("...")`, `GetComponent("TypeName")`, or `Find(...).GetComponent<...>()`.
+- Prefer `[SerializeField] private` typed references assigned in the Inspector, prefab, or controlled Editor/generator scripts.
+- `GetComponent<T>()` is allowed for type-safe same-object or already-referenced-object dependencies, preferably in `Awake`, `Reset`, `OnValidate`, or setup code, and the result should be cached.
+- Do not repeatedly call `Find`, `GetComponent`, LINQ, or scene-wide discovery APIs in `Update` / `FixedUpdate`.
+- For UI and child nodes, prefer serialized typed view/component references instead of relying on hierarchy display names.
+- Exceptions are limited to editor-only migration/setup/test scripts and must include a short reason plus validation/null handling.
+
 ## ScriptableObject Config Rules
 - Prefer ScriptableObject or the existing config system for skills, items, characters, levels, and balance data.
 - Do not hardcode long-term configuration in MonoBehaviours.
