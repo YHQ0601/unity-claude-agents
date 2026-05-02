@@ -82,3 +82,15 @@ Do not mix placeholder assets with final art assets.
 - Do not introduce complex abstractions for one-off features.
 - Before review or QA, identify changed files, affected systems, and likely Unity serialization/reference risks.
 - After code changes, run or propose the smallest relevant verification.
+
+## Cross-Tool Compatibility
+This Claude Code workflow remains unchanged. The repository also provides
+`AGENTS.md`, `.codex/`, `.agents/skills/`, `.opencode/`, and `opencode.json`
+as adapter layers so Codex and opencode can follow the same Unity workflow as
+closely as their native capabilities allow.
+
+Do not treat the adapter files as replacements for `.claude/settings.json`,
+`.claude/agents/`, `.claude/skills/`, `.claude/rules/`, or `.claude/hooks/`.
+When the shared workflow changes, update adapter files intentionally while
+keeping this Claude Code agreement compatible with the existing `.claude/`
+layout.

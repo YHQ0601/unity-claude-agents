@@ -1,0 +1,12 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    ".claude/rules/*.md"
+  ],
+  "permission": {
+    "skill": {
+      "*": "allow",
+      "codex-*": "deny"
+    }
+  }
+}

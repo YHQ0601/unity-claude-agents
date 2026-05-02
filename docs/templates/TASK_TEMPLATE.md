@@ -16,7 +16,7 @@ Completed:
 
 ## Out of Scope
 
-## Suggested Claude Agent
+## Suggested Agent / Workstream
 
 ## File Ownership
 
